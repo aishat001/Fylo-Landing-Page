@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: min(max(1rem, 4vw), 22px);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.container {
+    background-color: #181f2a;
+
+    width: 100%;
+}
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAVIGATION */
+.nav-container {
+    height: 4rem;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    width: max-content;
+    margin-left: 1.5rem;
+}
+.logo {
+    width:5rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+/* MAIN BODY */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+
+/* SECTION-1 */
+section.intro{
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    padding-bottom: 3rem;
+    background-color: #232d3ecc;
+}
+.svg-image {
+    max-width: 45rem;
+    margin: auto;
+}
+.intro-content {
+    max-width: 40rem;
+    margin: auto;
+}
+.intro-image {
+    width: 100%;
+    margin: auto;
+}
+.intro-heading {
+    margin-top: 3rem;
+}
+ .intro-text {
+     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+button.get-started {
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(50deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    margin: auto;
+    color:white;
+    border: none;
+}
+
+/* SECTION-2 */
+section.features {
+    padding:1rem 3rem;
+}
+.section-2-image {
+    width: 50px;
+    height: 50px;
+}
+
+div.content{
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+}
+.feature {
+    display: flex;
+    height: 11rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.section-2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1.8rem;
+}
+.fearure-heading {
+    margin-bottom: 1rem;
+}
+
+
+/* SECTION-3 */
+section.productive{
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding:1rem 3rem;
+}
+
+.svg-image2 {
+    height: 13rem;
+    width: 100%;
+    background-image: url(../images/illustration-stay-productive.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+.productive-heading {
+    margin-bottom: 1rem;
+}
+.productive-text {
+    margin-bottom: 1rem;
+}
+.section-3-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1.5px solid #65e2d9;
+    color: #65e2d9;
+    background-color: transparent;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+
+/* SECTION-4 */
+section.teams {
+    padding: 3rem;
+    padding-bottom: 0px;
+    content: "";
+    background-image: url(../images/bg-quotes.png);
+    background-position: 85px 1.6rem;
+        background-repeat: no-repeat;
+    background-size: 35px;
+
+}
+
+.card {
+    width: 100%;
+    padding: 7%;
+    border-radius: 5px;
+    background-color: rgb(32, 42, 60);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.profile {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+.team-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right:.8rem;
+}
+
+/* FORM */
+section.forms {
+    padding: 2rem;
+    padding: 2rem;
+    padding-top: 0px;
+    position: relative;
+    top: 8rem;
+
+}
+form {
+    background-color: hsl(217, 28%, 15%);
+    padding: 1.5rem;
+}
+.title {
+    width: max-content;
+}
+.form-heading,
+.form-text,
+input[type="email"] {
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+}
+input {
+    width: 13rem;
+    height: 2rem;
+    border-radius: 50px;
+    padding: .5rem .5rem;
+    outline: none;
+    border: none;
+}
+input[type="button"] {
+    color: white;
+    background: linear-gradient(50deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+/* footer */
+footer {
+    padding: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+    background-color: #0b1523;
+}
+footer > ul{
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin: 5px;
+    margin-bottom: 1rem;
+}
+.footer-li {
+    margin-left: .5rem;
+}
+.footer-logo {
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+ul.location {
+    background-image: url(../images/icon-location.svg);
+    width: 100%;
+}
+ul.phone {
+    background-image: url(../images/icon-phone.svg);
+    
+}
+ul.email {
+    background-image: url(../images/icon-email.svg);
+    margin-bottom: 3rem;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.footer-nav-list > li {
+    margin-bottom: 1rem;
+    margin-left: 0px;
+}
+.icons {
+    height: 4rem;
+    text-align: center;
+}
+a.social-link {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    padding: .4rem;
+    top: 1rem;
+    margin-right: .5rem;
+}
+.facebook {
+    background-color: yellow;
+  }
+ion-icon {
+    position: relative;
+    top: .1rem;
+}
+@media screen and (min-width:768px) {
+    section.features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .feature {
+        max-width: 18rem;
+    }
+    section.productive {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .svg-image2 {
+        width: 50%;
+    }
+    .section-3-content {
+        width: 50%;
+    }
+    section.teams {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 18rem;
+        padding: 1rem;
+    }
+    form {
+        max-width: 30rem;
+        margin: auto;
+        padding: 3rem;
+    }
+}
+@media (max-width:1440px) and (min-width:600px) {
+    body {
+        font-size: 16px;
+    }
+}
